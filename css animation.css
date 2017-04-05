@@ -1,0 +1,168 @@
+.body {
+    animation-name: backb;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+   
+}
+.main{
+	width: 600px;
+	height: 500px;
+	border-radius: 5%;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid black;
+	animation-name: back;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	transform: translate(60%,15%);
+	
+}
+.hi{
+	width: 100px;
+	height: 50px;
+	border-radius:50%;
+	background: coral;
+	text-align:center;
+	color: black;
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+	position: center;
+}
+.hi:hover{
+	background: lightblue;
+	transform: translateY(15px);
+	
+}
+.date{
+	background: #385e27;
+	width: 100px;
+	height: 50px;
+	color: white;
+	top: 10px;
+	right: 10px;
+	border-radius: 8px;
+	position: absolute;
+	padding: 10px;
+}
+.date p{
+	padding-bottom: 5px;
+}
+.date:hover{
+	background: #46494C;
+	color: #6DC1B3;
+	transform: translateX(15px);
+
+}
+
+.welcome{
+	position: absolute;
+	top: 50%;
+	left:50%;
+	font-size: 50px;
+	transform: translate(-50%,-50%);
+	
+}
+
+.welcome h1{
+	animation-name: rainbow;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+}
+
+.arrow{
+	margin: 10px;
+	padding: 10px;
+	width: 70px;
+	height: 70px;
+	font-size: 57px;
+	border-radius: 50%;
+	border-color: 2px solid black;
+	background-color: coral;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	cursor: pointer;
+	transition: 2s;
+
+}
+.arrow:hover{
+	transform: translateX(5px);
+}
+
+
+@keyframes rainbow{
+	10%{
+		color: red;
+	}
+	20%{
+		color:  orange;
+	}
+	
+	40%{
+		color: yellow;
+	}
+	50%{
+		color: green;
+	}
+	
+	70%{
+		color: blue;
+	}
+	80%{
+		color:  indigo;
+	}
+	
+	100%{
+		color: violet;
+	}
+
+}
+
+@keyframes back{
+	20%{
+		background:red;
+
+	}
+	
+	40%{
+		background: green;
+	}
+	
+	60%{
+		background: blue;
+	}
+	
+	80%{
+		background: pink;
+	}
+	
+	100%{
+		background: orange;
+	}
+
+}
+
+@keyframes backb{
+	20%{
+		background:#4b1414;
+
+	}
+	
+	40%{
+		background: #343434;
+	}
+	
+	60%{
+		background: #3b104d;
+	}
+	
+	80%{
+		background: #2b8961;
+	}
+	
+	100%{
+		background: #382b89;
+	}
+
+}
